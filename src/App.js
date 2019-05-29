@@ -10,7 +10,7 @@ const App = () => {
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("chicken");
+  const [query, setQuery] = useState("apple");
 
   useEffect(() => {
     getRecipes();
@@ -49,6 +49,7 @@ const App = () => {
           Search
         </button>
       </form>
+      <div className="recipes">
       {recipes.map(recipe => (
         <Recipe
           title={recipe.recipe.label}
@@ -57,6 +58,7 @@ const App = () => {
           ingredients={recipe.recipe.ingredients}
         />
       ))}
+      </div>
     </div>
   );
 };
