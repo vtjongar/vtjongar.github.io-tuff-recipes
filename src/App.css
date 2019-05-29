@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Freckle+Face&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kirang+Haerang&display=swap');
 .App {
 min-height: 100vh;
 background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+font-family: 'Freckle Face', cursive;
+
 }
 
 .search-form{
@@ -8,16 +12,48 @@ background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, 
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+
+  margin-bottom: 100px;
 
 }
 
+.tuff {
+  width: 75px;
+  height: 75px;
+  padding-bottom: 25px;
+  margin-right: 15px;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.tuff-recipes {
+
+
+  margin-right: 0px;
+ 
+  font-size: 40px;
+}
+
 .search-bar{
-  width: 50%;
+  width: 25%;
   border: none;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-right: 20px;
-  border: 1px solid black;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+  box-shadow: 7px 7px 7px  	gray;
+
+  background-color: white;
+  opacity: 0.6;
 }
 
 .search-button {
@@ -26,11 +62,14 @@ background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, 
   padding: 10px 20px;
   color: white;
   border-radius: 20px;
+  box-shadow: 5px 5px 5px 	gray;
+  
 }
 
 .recipes {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
   
 }

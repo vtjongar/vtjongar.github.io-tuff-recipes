@@ -37,8 +37,14 @@ const App = () => {
   };
 
   return (
+    
     <div className="App">
+ 
       <form onSubmit={getSearch} className="search-form">
+        <div className="container">
+      <img className="tuff" src="/images/tuff.png" />
+      <h1 className="tuff-recipes">Tuff! Recipes</h1>
+      </div>
         <input
           className="search-bar"
           type="text"

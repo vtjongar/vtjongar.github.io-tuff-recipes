@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap');
 .recipe {
   border-radius: 10px;
   box-shadow: 0px 5px 20px rbg(71, 71, 71);
@@ -5,13 +7,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background:  white;
+  
+
   align-items: center;
   width: 1200px;
   height: 400px;
-  border: 3px solid black;
+  box-shadow: 3px 3px 3px 		#202020;
 
   padding: 50px;
+background-color: beige;
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+
 
 }
 
@@ -19,16 +26,19 @@
 
   width: 300px;
   height: 300px;
-  border-radius: 50%;
+  border-radius: 5%;
   margin-left: 10px;
   margin-right: 10px;
+  
 }
 
 .title {
-border-right: 3px solid black;
+border-right: 3px solid 		#202020;
 height: 150px;
 margin-right: 50px;
 padding: 50px;
+font-size: 30px;
+font-family: 'Caveat Brush', cursive;
 
 }
 
@@ -37,10 +47,15 @@ padding: 50px;
   height: 250px;
   margin-right: 20px;
   padding-right: 50px;
+  font-size: 15px;
 
   }
 
   .calories {
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  li {
+    margin-bottom: 10px;
   }
