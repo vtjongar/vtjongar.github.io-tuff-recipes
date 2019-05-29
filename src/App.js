@@ -10,7 +10,7 @@ const App = () => {
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("apple");
+  const [query, setQuery] = useState("vegan");
 
   useEffect(() => {
     getRecipes();
@@ -33,18 +33,17 @@ const App = () => {
   const getSearch = e => {
     e.preventDefault();
     setQuery(search);
-    setSearch('');
+    setSearch("");
   };
 
   return (
-    
     <div className="App">
- 
       <form onSubmit={getSearch} className="search-form">
         <div className="container">
-      <img className="tuff" src="/images/tuff.png" />
-      <h1 className="tuff-recipes">Tuff! Recipes</h1>
-      </div>
+          <img className="tuff" src="/images/tuff.png" />
+          <h1 className="tuff-logo">Tuff!</h1>
+        </div>
+        <p>recipes</p>
         <input
           className="search-bar"
           type="text"
@@ -56,14 +55,14 @@ const App = () => {
         </button>
       </form>
       <div className="recipes">
-      {recipes.map(recipe => (
-        <Recipe
-          title={recipe.recipe.label}
-          calories={recipe.recipe.calories}
-          image={recipe.recipe.image}
-          ingredients={recipe.recipe.ingredients}
-        />
-      ))}
+        {recipes.map(recipe => (
+          <Recipe
+            title={recipe.recipe.label}
+            calories={recipe.recipe.calories}
+            image={recipe.recipe.image}
+            ingredients={recipe.recipe.ingredients}
+          />
+        ))}
       </div>
     </div>
   );
