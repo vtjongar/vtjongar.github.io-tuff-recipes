@@ -7,8 +7,8 @@ This app was built with ReactJS. It pulls recipes from the Edamam recipe search 
 
 ## Features
 - Search bar
-- Lists of recipe names
-- List of recipe ingredients for each recipe 
+- Lists recipe names
+- Lists ingredients for each recipe 
 - Images of each recipe 
  
 
