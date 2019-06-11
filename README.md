@@ -10,9 +10,8 @@ This app was built with ReactJS. It pulls recipes from the Edamam recipe search 
 - Lists of recipe names
 - List of recipe ingredients for each recipe 
 - Images of each recipe 
-- If the letter guessed by the user DOES exist in the word, the letter will appear in the appropriate space on the page 
-- When the game is finished, the page will notify which player won the game 
-- 
+ 
+
 ## Technologies Used 
 
 - ReactJS
